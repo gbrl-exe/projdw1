@@ -1,4 +1,4 @@
 # projdw1
 Projeto de DW1
 
-Grupo: Cawan Carvalho, Davi e Gabriel da Silva
+Grupo: Cawan Carvalho, Davi Cavalcanti e Gabriel da Silva
