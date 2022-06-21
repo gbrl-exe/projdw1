@@ -1,0 +1,46 @@
+/* Estilização do footer, definindo tamanho, espaçamento e cor de fundo - Cawan */
+footer{
+    width: 97%;
+    position: absolute;
+    left: 0;
+    background-color: white;
+    display: flex;
+    padding: 0 1.5%;
+}
+
+footer div span{
+    padding: 10px 0;
+}
+
+footer div:first-child {
+    align-items: center;
+}
+
+footer div h1{
+    font-size: 48px;
+    margin: 0;
+}
+
+/* Estilização das divs do footer exceto a div que contém os ícones das redes sociais - Cawan */
+footer div:not(.icons){
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer div img{
+    width: 30px;
+}
+
+footer div:last-child {
+    flex-direction: row;
+}
+
+footer div:last-child span{
+    font-size: 26px;
+}
+
+footer div:last-child ul{
+    list-style: none;
+}

@@ -1,0 +1,55 @@
+/* Media Query para ocultar os elementos do menu no mobile - Cawan*/
+@media (max-width: 600px) { 
+    nav ul a:not(:first-child, :last-child){
+        display: none;
+    }
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100vw;
+    background-color: #000000;
+    
+}
+
+nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0 2vw;
+    justify-content: flex-end;
+    
+}
+
+nav ul a li{
+    list-style: none;
+    padding: 3vh 3vw;
+    cursor: pointer;
+}
+
+nav ul a{
+    color: #f8f8f8;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+/* Estilo do logo no menu - Cawan */
+nav ul a:first-child li{
+    position: absolute;
+    left: 0;
+}
+
+/* Efeito de passar o mouse em cima dos elementos do menu e inverter as cores - Cawan */
+nav ul a:hover:not(:first-child){
+    background-color: #f8f8f8;
+    color: #000000;
+}
+
+/* Definindo o estilo do ultimo elemento do menu - Cawan */
+nav ul a:last-child li{
+    background-color: #f8f8f8;
+    color: #000000;
+    font-weight: 600;
+}

@@ -1,0 +1,31 @@
+/* Estilo do corpo da página formulário - Cawan */
+section{
+    background-color: white;
+    margin: 10vh auto;
+    padding: 0 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    box-shadow: 13px 12px hsl(0deg 0% 100% / 60%);
+    height: 80vh;
+    justify-content: center;
+}
+
+/* Estilização do input - Cawan */
+input{
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+/* Estilização do botão - Cawan */
+button{
+    background-color: white;
+    border: 2px solid black;
+    padding: 2% 5%;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 2% 0;
+    float: right;
+}

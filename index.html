@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Yale School Art</title>
+    <!--Gabriel: Incluindo os arquivos externos que darão estilo à página-->
+    <link rel="stylesheet" href="css/geral.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!--Gabriel: Utilizando a tag <ul> de lista desornada para criação do menu-->
+        <ul>
+          <!--Gabriel: Incluindo links internos com a tag <a> e utilizando a tag <li> para listar os itens do menu. Menu âncora-->
+          <a href="index.html#home"><li>YALE</li></a>
+          <a href="index.html#home"><li>HOME</li></a>
+          <a href="index.html#about"><li>ABOUT</li></a>
+          <a href="index.html#exhibitions"><li>EXHIBITIONS</li></a>
+          <a href="index.html#gallery"><li>GALLERY</li></a>
+          <a href="index.html#events"><li>EVENTS</li></a>
+          <a href="aply.html"><li>APLY</li></a>
+        </ul>
+      </nav>
+    </header>
+    <!--Gabriel: Criando um sessão com com atributo de ID para que seja possível utilizá-lo como link interno no menu-->
+    <section id="home">
+      <!--Gabriel: Utilizando atributo de classe no elemento <div> para definir um estilo de formatação-->
+      <div class="filtro"></div>
+      <div class="caixas">
+        <div class="caixa-branca"></div>
+        <div class="caixa-branca"></div>
+        <div class="caixa-branca"></div>
+        <div class="caixa-branca"></div>
+      </div>
+      <div class="texto">
+        <h1>YALE</h1>
+        <h2>School of Art</h2>
+      </div>
+    </section>
+    <section id="about">
+      <div class="caixas">
+        <div class="caixa-branca"></div>
+        <div class="caixa-branca"></div>
+        <div class="caixa-branca"></div>
+        <div class="caixa-branca"></div>
+      </div>
+      <div class="texto">
+        <h1>ABOUT</h1>
+        <p>
+          The <strong>Yale School of Art</strong> is a graduate school that
+          confers
+          <strong
+            >MFAs in Graphic Design, Painting/Printmaking, Photography, and
+            Sculpture</strong
+          >. And offers undergraduate-level art courses to Yale College
+          students.
+          <strong
+            >Our website exists as an ongoing project of students of
+            IFSP</strong
+          >
+          in web development. It functions as a wiki—all members of the School
+          of Art community but dosn't have the ability to add new, and edit most
+          existing content, cause one of the autor thinks that idea can't lead
+          to anything <em>"user friendly"</em>.
+        </p>
+      </div>
+    </section>
+    <section id="exhibitions">
+      <div class="caixas">
+        <div class="caixa-branca"></div>
+        <div class="caixa-branca"></div>
+        <div class="caixa-branca"></div>
+        <div class="caixa-branca"></div>
+      </div>
+      <div class="texto">
+        <h1>EXHIBITIONS</h1>
+        <!--Gabriel: Utilizando tag <iframe> para inserir um vídeo do Youtube no HTML -->
+        <iframe
+          width="500"
+          height="300"
+          src="https://www.youtube.com/embed/zZpm8ogc34o"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+    <section id="gallery">
+      <div class="caixas">
+        <div class="caixa-branca"></div>
+        <div class="caixa-branca"></div>
+        <div class="caixa-branca"></div>
+        <div class="caixa-branca"></div>
+      </div>
+      <div class="texto">
+        <h1>GALLERY</h1>
+        <div class="galeria">
+          <!--Gabriel: Utilizando a tag <img> para inserir imagem no HTML-->
+          <img src="images/galeria-1.jpg" />
+          <img src="images/galeria-2.jpg" />
+          <img src="images/galeria-3.jpg" />
+        </div>
+      </div>
+    </section>
+    <section id="events">
+      <div class="caixas">
+        <div class="caixa-branca"></div>
+        <div class="caixa-branca"></div>
+        <div class="caixa-branca"></div>
+        <div class="caixa-branca"></div>
+      </div>
+      <div class="texto">
+        <h1>EVENTS</h1>
+        <!--Gabriel: Criando tabela para apresentar dados dos eventos-->
+        <table>
+          <thead>
+            <th>DATE</th>
+            <th>DESCRIPTION</th>
+            <th>LINK</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>01/04</td>
+              <td>Laugh with Laraaji: A Laughter Work~Playshop</td>
+              <td><a href="#">Go To</a></td>
+            </tr>
+            <tr>
+              <td>03/03</td>
+              <td>
+                Visiting Artist Lecture in Photography: Michael Bailey Gates
+              </td>
+              <td><a href="#">Go To</a></td>
+            </tr>
+            <tr>
+              <td>01/03</td>
+              <td>Visiting Artist Lecture in Graphic Design: Silvio Lorusso</td>
+              <td><a href="#">Go To</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <h1>Yale</h1>
+        <!--Gabriel: Utilizando a tag <span> para inserir uma frase no HTML-->
+        <span>Follow us!</span>
+        <!--Gabriel: Utilizando a tag <img> para inserir imagem no HTML-->
+        <div class="icons">
+          <img src="images/facebook.svg" alt="" />
+          <img src="images/instagram.svg" alt="" />
+          <img src="images/youtube.svg" alt="" />
+        </div>
+      </div>
+      <div>
+        <span>Navigation:</span>
+        <ul>
+          <!--Gabriel: Incluindo links internos com a tag <a> e utilizando a tag <li> para listar os itens do menu. Menu de navegação no footer-->
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#exhibitions">EXHIBITIONS</a></li>
+          <li><a href="#gallery">GALLERY</a></li>
+          <li><a href="#events">EVENTS</a></li>
+          <li><a href="aply.html">APLY</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

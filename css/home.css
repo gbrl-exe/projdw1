@@ -1,0 +1,130 @@
+/* Estilo do corpo da home - Cawan */
+section{
+    display: flex;
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+/* Definindo background e cor do texto da primeira sessão - Cawan */
+section:first-of-type{
+    background: url(../images/fundo-art.jpg);
+    background-size: cover;
+    color: #f8f8f8;
+}
+
+/* Estilização do texto da primeira sessão - Cawan */
+section:first-of-type .texto h1{
+    font-size: 160px;
+    margin: 0;
+}
+
+section:first-of-type .texto{
+    position: absolute;
+    text-shadow: 7px 6px 0px black;
+    background: hsla(0, 0%, 0%, 0.6);
+}
+
+section .caixas{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Definindo o formato das bordas das sessões - Cawan */
+.caixa-branca{
+    background-color: #000000;
+    position: absolute;
+}
+
+.caixa-branca:nth-child(1){
+    width: 150px;
+    height: 150px;
+    left: 0;
+    top: 0;
+}
+
+.caixa-branca:nth-child(2){
+    width: 150px ;
+    height: 150px ;
+    right: 0;
+    bottom: 0;
+}
+
+.caixa-branca:nth-child(3){
+    width: 150px;
+    height: 150px;
+    left: 0;
+    bottom: 0;
+}
+
+.caixa-branca:nth-child(4){
+    width: 150px ;
+    height: 150px ;
+    right: 0;
+    top: 0;
+}
+
+section:nth-of-type(2){
+    background: url(../images/fundo-art-2.jpg);
+    background-size: cover;
+}
+
+section .texto{
+    position: absolute;
+    background: hsla(0, 0%, 100%, 0.8);
+    width: 75%;
+    padding: 2%;
+}
+
+section .texto h1{
+    font-size: 2em;
+    margin: 0;
+}
+
+section .texto p{
+    text-align: justify;
+    text-align-last: center;
+    font-size: 1.5em;
+}
+
+section:nth-of-type(3){
+    background: url(../images/fundo-art-3.jpg);
+    background-size: cover;
+}
+
+section:nth-of-type(4){
+    background: url(../images/fundo-art-4.jpg);
+    background-size: cover;
+}
+
+section:nth-of-type(4) .galeria img{
+    width: 30%;
+    height: 400px;
+}
+
+section:nth-of-type(5){
+    background: url(../images/fundo-art-5.jpg);
+    background-size: cover;
+}
+
+/* Estilização da tabela */
+section:nth-of-type(5) .texto table{
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+section:nth-of-type(5) .texto table thead{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+section:nth-of-type(5) .texto table tbody tr td{
+    padding: 20px 30px;
+}
+
+section:nth-of-type(5) .texto table tbody tr td a{
+    color: black!important;
+}

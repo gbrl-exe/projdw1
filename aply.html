@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Yale School Art</title>
+     <!--Gabriel: Incluindo os arquivos externos que darão estilo à página-->
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/aply.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <!--Gabriel: Incluindo links internos com a tag <a> e utilizando a tag <li> para listar os itens do menu-->
+                <a href="index.html#home"><li>YALE</li></a>
+                <a href="index.html#home"><li>HOME</li></a>
+                <a href="index.html#about"><li>ABOUT</li></a>
+                <a href="index.html#exhibitions"><li>EXHIBITIONS</li></a>
+                <a href="index.html#gallery"><li>GALLERY</li></a>
+                <a href="index.html#events"><li>EVENTS</li></a>
+                <a href="aply.html"><li>APLY</li></a>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <!--Gabriel: Criando um título com a tag <h1>-->
+        <h1>Aply for Yale!</h1>
+        <form action="javascript:validateForm();">
+            <div>
+                <label for="name">Name*:</label>
+                <!--Gabriel: Utilizando o atributo required para definir o preenchimento do campo como obrigatório-->
+                <!--Gabriel: Utilizando o minlength para validar se o preenchimento do campo tem no mínimo 3 letras-->
+                <!--Gabriel: Utilizando o minlength para validar se o preenchimento do campo tem no máximo 100 letras-->
+                <input required name="name" minlength="3" maxlength="100" type="text">
+            </div>
+
+            <div>
+                <label for="birthday">Birthdate*:</label>
+                <!--Gabriel Utilizando o atributo MIN para validar a data mínimo para preenchimento-->
+                <input required name="birthdate" min="1922-06-20" type="date">
+            </div>
+
+            <div>
+                <label for="email">Email*:</label>
+                <!--Davi: Utilizando o atributo required para definir o preenchimento do campo como obrigatório-->
+                <!--Davi: Utilizando o minlength para validar se o preenchimento do campo tem no mínimo 3 letras-->
+                <!--Davi: Utilizando o minlength para validar se o preenchimento do campo tem no máximo 60 letras-->
+                <input required name="email" minlength="3" maxlength="60" type="email">
+            </div>
+
+            <div>
+                <label for="confirmemail">Confirm Email*:</label>
+                <!--Davi: Utilizando o atributo required para definir o preenchimento do campo como obrigatório-->
+                <!--Davi: Utilizando o minlength para validar se o preenchimento do campo tem no mínimo 3 letras-->
+                <!--Davi: Utilizando o minlength para validar se o preenchimento do campo tem no máximo 60 letras-->
+                <input required name="confirmemail" minlength="3" maxlength="60" type="email">
+            </div>
+
+            <div>
+                <label for="endereco">Address*:</label>
+                <!--Davi: Utilizando o atributo required para definir o preenchimento do campo como obrigatório-->
+                <!--Davi: Utilizando o minlength para validar se o preenchimento do campo tem no mínimo 3 letras-->
+                <!--Davi: Utilizando o minlength para validar se o preenchimento do campo tem no máximo 60 letras-->
+                <input required name="endereco" minlength="3" maxlength="60" type="text">
+            </div>
+
+            <div>
+                <label for="uf">UF*:</label>
+                <!--Davi: Utilizando o atributo required para definir o preenchimento do campo como obrigatório-->
+                 <input required name="uf" size="2" type="text">
+            </div>
+
+            <span id="validateForm"></span>
+            <button type="submit">SEND</button>
+        </form>
+    </section>
+    <footer>
+        <div>
+            <h1>Yale</h1>
+            <span>Follow us!</span>
+            <div class="icons">
+                <img src="images/facebook.svg" alt="">
+                <img src="images/instagram.svg" alt="">
+                <img src="images/youtube.svg" alt="">
+            </div>
+        </div>
+        <div>
+            <span>Navigation:</span>
+            <ul>
+                <li><a href="index.html#home">HOME</a></li>
+                <li><a href="index.html#about">ABOUT</a></li>
+                <li><a href="index.html#exhibitions">EXHIBITIONS</a></li>
+                <li><a href="index.html#gallery">GALLERY</a></li>
+                <li><a href="index.html#events">EVENTS</a></li>
+                <li><a href="#">APLY</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<!--Davi: Referência parar o javascript usado no formulário-->
+<script src="js/script.js"></script>
