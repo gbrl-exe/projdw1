@@ -35,34 +35,28 @@ section .caixas{
 
 /* Definindo o formato das bordas das sessões - Cawan */
 .caixa-branca{
+    width: 150px;
+    height: 150px;
     background-color: #000000;
     position: absolute;
 }
 
 .caixa-branca:nth-child(1){
-    width: 150px;
-    height: 150px;
     left: 0;
     top: 0;
 }
 
 .caixa-branca:nth-child(2){
-    width: 150px ;
-    height: 150px ;
     right: 0;
     bottom: 0;
 }
 
 .caixa-branca:nth-child(3){
-    width: 150px;
-    height: 150px;
     left: 0;
     bottom: 0;
 }
 
 .caixa-branca:nth-child(4){
-    width: 150px ;
-    height: 150px ;
     right: 0;
     top: 0;
 }
@@ -80,19 +74,24 @@ section .texto{
 }
 
 section .texto h1{
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 0;
 }
 
-section .texto p{
+section .texto p, a{
     text-align: justify;
     text-align-last: center;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 section:nth-of-type(3){
     background: url(../images/fundo-art-3.jpg);
     background-size: cover;
+}
+
+iframe{
+    width: 500px;
+    height: 300px;
 }
 
 section:nth-of-type(4){
@@ -110,21 +109,43 @@ section:nth-of-type(5){
     background-size: cover;
 }
 
-/* Estilização da tabela */
-section:nth-of-type(5) .texto table{
-    margin: 0 auto;
-    background-color: #ffffff;
+a{
+    color: black;
 }
 
-section:nth-of-type(5) .texto table thead{
-    background-color: #000000;
-    color: #ffffff;
-}
+@media (max-width: 600px) { 
+    section:first-of-type .texto h1{
+        font-size: 60px;
+    }
+    
+    .caixa-branca{
+        width: 50px;
+        height: 50px;
+    }
 
-section:nth-of-type(5) .texto table tbody tr td{
-    padding: 20px 30px;
-}
+    section .texto h1{
+        font-size: 1em;
+    }
 
-section:nth-of-type(5) .texto table tbody tr td a{
-    color: black!important;
+    section .texto h2{
+        font-size: 0.75em;
+    }
+
+    section .texto p, a{
+        font-size: 0.6em;
+    }
+
+    iframe{
+        width: 200px;
+        height: 125px;
+    }
+
+    section:nth-of-type(4) .galeria img{
+        display: none;
+    }
+
+    section:nth-of-type(4) .galeria img:first-of-type{
+        display: block;
+        width: 100%;
+    }
 }

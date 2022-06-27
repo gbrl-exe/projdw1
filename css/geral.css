@@ -4,3 +4,14 @@ body{
     margin: 10vh 2vw;
     font-size: 1.5em;
 }
+
+/* Estilização do botão - Cawan */
+button{
+    background-color: white;
+    border: 2px solid black;
+    padding: 2% 5%;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 2% 0;
+}

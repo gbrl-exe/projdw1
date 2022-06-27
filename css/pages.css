@@ -1,0 +1,131 @@
+section{
+    display: flex;
+    justify-content: center;
+}
+/* Estilo do corpo da página formulário - Cawan */
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 40vw;
+    box-shadow: 13px 12px hsl(0deg 0% 100% / 60%);
+    background-color: white;
+    margin: 3vh 1vw;
+    padding: 3%;
+}
+
+article h1{
+    font-size: 1em;
+}
+
+article h2{
+    font-size: 0.9em;
+}
+
+article h3{
+    font-size: 0.8em;
+}
+
+article p{
+    font-size: 0.75em;
+}
+
+div#galeria{
+    margin: 0 4%;
+}
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 24%;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: 220px;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+section article img.exhibition-image{
+    border: solid 2px black;
+    max-width: 75vw;
+}
+
+/* Estilização do input - Cawan */
+input, textarea{
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2% 0%;
+}
+
+/* Estilização da tabela - Cawan */
+table{
+    margin: 2% auto;
+    background-color: #ffffff;
+}
+
+table thead{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+table tbody tr td, th{
+    padding: 20px 30px;
+    border: 2px solid #000000;
+}
+
+table tbody tr td a{
+    color: black!important;
+}
+
+@media (max-width: 900px) { 
+    article h1{
+        font-size: 0.75em;
+    }
+    
+    article h2{
+        font-size: 0.7em;
+    }
+    
+    article h3{
+        font-size: 0.6em;
+    }
+    
+    article p{
+        font-size: 0.5em;
+    }
+
+    section{
+        flex-direction: column;
+    }
+
+    div.gallery {
+        width: 29%;
+    }
+
+    div.desc {
+        display: none;
+    }
+
+    div.gallery img {
+        height: 120px;
+    }
+
+    table{
+        font-size: 0.2em
+    }
+
+    table tbody tr td{
+        padding: 0;
+    }
+}

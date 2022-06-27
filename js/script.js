@@ -9,7 +9,7 @@ function validateForm(){
     // Davi: valida se os campos do email são iguais
     if(email == confirmEmail && (2022 - birthdate.getFullYear()) < 100 && (2022 - birthdate.getFullYear()) > 18){
         // Davi: Substitui o conteúdo da tela pela mensagem de Parabéns por preencher corretamente
-        document.querySelector('section').innerHTML = '<h1>Parabéns o formulário está correto!!</h1>'
+        document.querySelector('article').innerHTML = '<h1>Sua mensagem foi enviada com sucesso!!</h1>'
         setInterval(
             function(){
                 window.location.href = 'index.html'

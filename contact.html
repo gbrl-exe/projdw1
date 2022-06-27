@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yale School Art</title>
+     <!--Gabriel: Incluindo os arquivos externos que darão estilo à página-->
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a href="index.html"><li>YALE</li></a>
+                <a href="about.html"><li>ABOUT</li></a>
+                <a href="exhibitions.html"><li>EXHIBITIONS</li></a>
+                <a href="gallery.html"><li>GALLERY</li></a>
+                <a href="events.html"><li>EVENTS</li></a>
+                <a href="contact.html"><li>CONTACT US</li></a>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <article>
+            <!--Gabriel: Criando um título com a tag <h1>-->
+            <h1>Contact Us!</h1>
+            <form action="javascript:validateForm();">
+                <div>
+                    <label for="name">Name*:</label>
+                    <!--Gabriel: Utilizando o atributo required para definir o preenchimento do campo como obrigatório-->
+                    <!--Gabriel: Utilizando o minlength para validar se o preenchimento do campo tem no mínimo 3 letras-->
+                    <!--Gabriel: Utilizando o minlength para validar se o preenchimento do campo tem no máximo 100 letras-->
+                    <input required name="name" minlength="3" maxlength="100" type="text">
+                </div>
+
+                <div>
+                    <label for="birthday">Birthdate*:</label>
+                    <!--Gabriel Utilizando o atributo MIN para validar a data mínimo para preenchimento-->
+                    <input required name="birthdate" min="1922-06-20" type="date">
+                </div>
+
+                <div>
+                    <label for="email">Email*:</label>
+                    <!--Davi: Utilizando o atributo required para definir o preenchimento do campo como obrigatório-->
+                    <!--Davi: Utilizando o minlength para validar se o preenchimento do campo tem no mínimo 3 letras-->
+                    <!--Davi: Utilizando o minlength para validar se o preenchimento do campo tem no máximo 60 letras-->
+                    <input required name="email" minlength="3" maxlength="60" type="email">
+                </div>
+
+                <div>
+                    <label for="confirmemail">Confirm Email*:</label>
+                    <!--Davi: Utilizando o atributo required para definir o preenchimento do campo como obrigatório-->
+                    <!--Davi: Utilizando o minlength para validar se o preenchimento do campo tem no mínimo 3 letras-->
+                    <!--Davi: Utilizando o minlength para validar se o preenchimento do campo tem no máximo 60 letras-->
+                    <input required name="confirmemail" minlength="3" maxlength="60" type="email">
+                </div>
+
+                <div>
+                    <label for="endereco">Address*:</label>
+                    <!--Davi: Utilizando o atributo required para definir o preenchimento do campo como obrigatório-->
+                    <!--Davi: Utilizando o minlength para validar se o preenchimento do campo tem no mínimo 3 letras-->
+                    <!--Davi: Utilizando o minlength para validar se o preenchimento do campo tem no máximo 60 letras-->
+                    <input required name="endereco" minlength="3" maxlength="60" type="text">
+                </div>
+
+                <div>
+                    <label for="uf">UF*:</label>
+                    <!--Davi: Utilizando o atributo required para definir o preenchimento do campo como obrigatório-->
+                    <input required name="uf" minlength="2" maxlength="2" type="text">
+                </div>
+
+                <div>
+                    <label for="mensagem">Message*:</label>
+                    <!--Davi: Utilizando o atributo required para definir o preenchimento do campo como obrigatório-->
+                    <textarea name="mensagem" rows="10"></textarea>
+                </div>
+
+                <span id="validateForm"></span>
+                <button type="submit">SEND</button>
+            </form>
+        </article>
+    </section>
+    <footer>
+        <div>
+            <h1>Yale</h1>
+            <span>Follow us!</span>
+            <div class="icons">
+                <img src="images/facebook.svg" alt="">
+                <img src="images/instagram.svg" alt="">
+                <img src="images/youtube.svg" alt="">
+            </div>
+        </div>
+    </footer>
+</body>
+<!--Davi: Referência parar o javascript usado no formulário-->
+<script src="js/script.js"></script>

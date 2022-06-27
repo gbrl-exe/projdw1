@@ -5,6 +5,7 @@ footer{
     left: 0;
     background-color: white;
     display: flex;
+    justify-content: center;
     padding: 0 1.5%;
 }
 
@@ -31,16 +32,4 @@ footer div:not(.icons){
 
 footer div img{
     width: 30px;
-}
-
-footer div:last-child {
-    flex-direction: row;
-}
-
-footer div:last-child span{
-    font-size: 26px;
-}
-
-footer div:last-child ul{
-    list-style: none;
 }
