@@ -88,6 +88,10 @@ table tbody tr td a{
     color: black!important;
 }
 
+form{
+    width: 400px;
+}
+
 @media (max-width: 900px) { 
     article h1{
         font-size: 0.75em;
@@ -127,5 +131,9 @@ table tbody tr td a{
 
     table tbody tr td{
         padding: 0;
+    }
+    
+    form{
+        width: 75vw;
     }
 }
